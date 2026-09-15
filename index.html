@@ -2,49 +2,108 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>やるメモ〜やることリストとメモリスト〜</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="シンプルなToDoアプリ。重要タスクと通常タスクを分けて管理、並び替えや通知機能で毎日のタスク管理を快適に。">
-  
-  <!-- iOSのスマートAppバナー -->
-  <meta name="apple-itunes-app" content="app-id=6748558249">
-
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-           margin: 24px; line-height: 1.7; background: #fdfdfd; color:#222; }
-    .wrap { max-width: 880px; margin: 0 auto; }
-    h1 { margin-bottom: .2em; font-size: 2rem; }
-    .badges a { display:inline-block; padding:.8em 1.2em; border:1px solid #007aff;
-                border-radius:10px; text-decoration:none; background:#007aff; color:#fff; }
-    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); margin: 24px 0; }
-    .card { border:1px solid #eee; border-radius:14px; padding:16px; background:#fafafa; }
-    .card b { display:block; margin-bottom:.3em; font-size:1.1rem; }
-    footer { color:#666; margin-top:40px; font-size:14px; text-align:center; }
-    a { color:#007aff; }
-  </style>
+  <meta name="theme-color" content="#fff8f0">
+  <meta name="description" content="やるメモは、やることリストとメモリストをひとつにまとめたiPhoneアプリ。重要なことの赤文字表示、通知設定、チェックや並び替えで毎日を見やすく整えます。">
+  <meta name="apple-itunes-app" content="app-id=6749482915">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="やるメモ | やることとメモを、これひとつで">
+  <meta property="og:description" content="やることも、覚えておきたいことも。毎日のリストをやさしく見やすく整えるiPhoneアプリ。">
+  <meta property="og:image" content="https://daidaidai-dev.github.io/todo/assets/01-tasks-and-memos.png">
+  <meta property="og:url" content="https://daidaidai-dev.github.io/todo/">
+  <link rel="canonical" href="https://daidaidai-dev.github.io/todo/">
+  <link rel="icon" href="assets/yaru-mascot.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <title>やるメモ | やることリストとメモリスト</title>
 </head>
 <body>
-  <div class="wrap">
-    <h1>やるメモ〜やることリストとメモリスト〜</h1>
-    <p>シンプルな操作で <b>タスクとメモ管理</b>。重要なことと日常のことを分けて記録し、通知や並び替えで効率的に管理できます。</p>
-
-<!--     <div class="badges">
-      <a href="https://apps.apple.com/app/【あなたのToDoアプリのAppStoreURL】" target="_blank" rel="noopener">
-        App Storeで見る
-      </a>
-    </div> -->
-
-    <div class="grid">
-      <div class="card"><b>通常タスクとメモ</b> 日常的なタスクやメモを気軽に追加・チェック。</div>
-      <div class="card"><b>重要タスクとメモ</b> 赤字で強調して管理。大事なことを見逃さない。</div>
-      <div class="card"><b>並び替え機能</b> タスクを自由にドラッグ＆ドロップで整理。</div>
-      <div class="card"><b>通知リマインダー</b> タスクごとに通知を設定可能。忘れ防止に便利。</div>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="やるメモ ページの先頭へ"><img src="assets/yaru-mascot.png" width="48" height="48" alt=""><span>やるメモ</span></a>
+      <nav class="header-nav" aria-label="ページ内メニュー">
+        <a href="#screens">画面を見る</a><a href="#features">できること</a><a href="#support">サポート</a>
+      </nav>
+      <a class="header-store" href="https://apps.apple.com/jp/app/id6749482915" target="_blank" rel="noopener noreferrer">App Storeで見る</a>
     </div>
-
-    <p><a href="app-ads.txt">広告に関する情報（app-ads.txt）</a></p>
-    <p><a href="https://pie-petunia-30d.notion.site/24a7172150ab809c917bfdd5a5215935?source=copy_link" target="_blank" rel="noopener">サポート / お問い合わせ</a></p>
-
-    <footer>© やるメモ〜やることリストとメモリスト〜</footer>
-  </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">やることも、<span class="hero-title-second">覚えておきたいことも。</span></h1>
+          <p class="hero-lead">タスクもメモも、ひとつに。</p>
+          <p class="hero-description">やるメモは、毎日のやることと大切なメモを、見やすいふたつのリストで管理できるiPhoneアプリです。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://apps.apple.com/jp/app/id6749482915" target="_blank" rel="noopener noreferrer">App Storeで見る <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#screens">アプリの画面を見る <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note"><img src="assets/memonnga-mascot.png" width="52" height="52" alt=""><p>やるうさぎとメモんがも、<br>あなたの一歩をそっと応援します。</p></div>
+        </div>
+        <figure class="hero-artboard">
+          <img src="assets/01-tasks-and-memos.png" width="1320" height="2868" alt="やることリストとメモリストを並べたアートボード。ふたつのチェックリストとマスコットが見えます。" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+    <section class="screens section-shell" id="screens" aria-labelledby="screens-title">
+      <div class="section-heading">
+        <h2 id="screens-title">毎日の流れが、ひと目でわかる。</h2>
+        <p>現行アプリの画面を使ったアートボードで、やるメモの使い心地をご紹介します。</p>
+      </div>
+      <div class="screen-grid">
+        <figure class="screen-item">
+          <img src="assets/02-tasks.png" width="1320" height="2868" loading="lazy" decoding="async" alt="やることリスト。項目をチェックで区別し、重要な項目は赤文字で表示。">
+          <figcaption><span class="screen-number">01</span><span><strong>やることを、サッと整理</strong><small>チェックして、進み具合を見やすく。</small></span></figcaption>
+        </figure>
+        <figure class="screen-item">
+          <img src="assets/03-important-reminder.png" width="1320" height="2868" loading="lazy" decoding="async" alt="やることの追加画面。重要マークと通知時間を設定する入力欄。">
+          <figcaption><span class="screen-number">02</span><span><strong>大事なことは、赤文字に</strong><small>必要なやることには通知する時間も設定。</small></span></figcaption>
+        </figure>
+        <figure class="screen-item">
+          <img src="assets/04-notifications.png" width="1320" height="2868" loading="lazy" decoding="async" alt="通知一覧。設定したやることの通知と予定時間。重要な通知はアプリ内で赤文字。">
+          <figcaption><span class="screen-number">03</span><span><strong>設定した通知を、一覧で確認</strong><small>重要なやることの通知も見分けやすく。</small></span></figcaption>
+        </figure>
+        <figure class="screen-item">
+          <img src="assets/05-memos.png" width="1320" height="2868" loading="lazy" decoding="async" alt="メモリスト。入力日が表示され、重要なメモは赤文字。">
+          <figcaption><span class="screen-number">04</span><span><strong>覚えておきたいことを、メモに</strong><small>入力日が表示され、大切なメモは赤文字に。</small></span></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="section-shell features-inner">
+        <div class="features-intro">
+          <h2 id="features-title">シンプルだから、<br>続けやすい。</h2>
+          <p>追加もチェックも、いつものリストの中で。やることとメモを行き来しながら、必要な情報を整えられます。</p>
+          <img src="assets/yaru-mascot.png" width="160" height="160" loading="lazy" alt="やるうさぎのマスコット">
+        </div>
+        <div class="feature-list">
+          <div class="feature-row"><span>01</span><div><h3>追加して、チェック</h3><p>やることやメモをすぐに追加。終わったやることや覚えたメモはチェックできます。</p></div></div>
+          <div class="feature-row"><span>02</span><div><h3>大切なことを赤文字で</h3><p>やることもメモも「重要にする」を選べます。重要な項目はリスト内で赤文字になります。</p></div></div>
+          <div class="feature-row"><span>03</span><div><h3>やることに通知を設定</h3><p>追加するときに日時を選び、設定した通知は「通知一覧」で確認できます。</p></div></div>
+          <div class="feature-row"><span>04</span><div><h3>自分の順番に並べ替え</h3><p>両方のリストで順番を変更でき、不要な項目や完了済みの項目を削除できます。</p></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="closing section-shell" aria-labelledby="closing-title">
+      <div>
+        <h2 id="closing-title">今日のひとつから、<br>はじめよう。</h2>
+        <p>やることも、残しておきたいメモも。やるメモで、毎日を少し見やすく。</p>
+        <a class="button button-primary" href="https://apps.apple.com/jp/app/id6749482915" target="_blank" rel="noopener noreferrer">App Storeで見る <span aria-hidden="true">↗</span></a>
+      </div>
+      <img src="assets/memonnga-mascot.png" width="216" height="216" loading="lazy" alt="メモんがのマスコット">
+    </section>
+  </main>
+  <footer id="support">
+    <div class="footer-inner section-shell">
+      <div class="footer-brand"><img src="assets/yaru-mascot.png" width="42" height="42" loading="lazy" alt=""><span>やるメモ</span></div>
+      <div class="footer-links">
+        <a href="https://pie-petunia-30d.notion.site/24a7172150ab809c917bfdd5a5215935?source=copy_link" target="_blank" rel="noopener noreferrer">サポート・お問い合わせ</a>
+        <a href="https://pie-petunia-30d.notion.site/2507172150ab8025ac36c7877f3a7add?source=copy_link" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+        <a href="app-ads.txt">広告に関する情報</a>
+      </div>
+      <p>© やるメモ</p>
+    </div>
+  </footer>
 </body>
 </html>
